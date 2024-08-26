@@ -4,11 +4,11 @@ Nesse desafio desenvolvi uma API para realizar o CRUD de *tasks* (tarefas).
 
 # Para rodar o projeto:
 cria um arquivo .env e adiciona:\
--API_BASE_URL
--WEB_BASE_URL
--PORT
--JWT_SECRET
--DATABASE_URL (SQLITE)
+- API_BASE_URL
+- WEB_BASE_URL
+- PORT
+- JWT_SECRET
+- DATABASE_URL (SQLITE)
 \
 `npm install`\
 `npx prisma migrate dev`\
