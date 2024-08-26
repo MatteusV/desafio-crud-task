@@ -1,6 +1,10 @@
 ## CRUD TASK
-Nesse desafio desenvolvi uma API para realizar o CRUD de *tasks* (tarefas).
-
+Nesse desafio desenvolvi uma API para realizar o CRUD de *tasks* (tarefas).\
+- Criação de uma task
+- Listagem de todas as tasks
+- Atualização de uma task pelo `id`
+- Remover uma task pelo `id`
+- Marcar pelo `id` uma task como completa
 
 # Para rodar o projeto
 cria um arquivo .env e adiciona:
@@ -13,11 +17,7 @@ cria um arquivo .env e adiciona:
 `npx prisma migrate dev`\
 `npm run start:dev`
 
-- Criação de uma task
-- Listagem de todas as tasks
-- Atualização de uma task pelo `id`
-- Remover uma task pelo `id`
-- Marcar pelo `id` uma task como completa
+
 
 ### Regras de negócio
 `Cadastro de Usuário`. O usuário deve ser capaz de se cadastrar com e-mail e senha. Implementar validação básica para e-mail e senha.\
