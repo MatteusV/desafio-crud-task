@@ -38,4 +38,4 @@ cria um arquivo `.env` e adiciona:
 `Criar tarefa`: `POST`-`/tasks`\
 `Atualizar tarefa`: `PATCH`-`/tasks/:id`\
 `Pegar tarefa pelo id`: `GET`-`/tasks/:id`\
-`Deletar tarefa`: `DELETE`-`/tasks/:id`\
+`Deletar tarefa`: `DELETE`-`/tasks/:id`
