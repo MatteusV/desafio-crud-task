@@ -1,0 +1,10 @@
+# .editorconfig
+
+root = true
+
+[*]
+# Defina o estilo de final de linha como LF
+end_of_line = lf
+# Defina a indentação para 2 espaços, por exemplo
+indent_size = 2
+indent_style = space

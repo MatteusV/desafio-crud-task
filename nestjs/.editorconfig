@@ -1,0 +1,11 @@
+# EditorConfig configurações para um projeto
+
+# Raiz do EditorConfig (para evitar buscar em diretórios pai)
+root = true
+
+# Configurações gerais
+[*]
+end_of_line = lf
+charset = utf-8
+indent_style = space
+indent_size = 2
