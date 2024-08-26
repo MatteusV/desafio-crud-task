@@ -1,4 +1,4 @@
-import { Loader } from 'lucide-react'
+import { Eye, EyeOff, Loader } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useLocation } from 'react-router-dom'
@@ -37,6 +37,7 @@ export function Auth() {
   } = useForm<RegisterSchema>()
 
   const [isLogin, setIsLogin] = useState(false)
+  const [showPassword, setShowPassword] = useState(false)
 
   async function handleRegisterAccount(data: RegisterSchema) {
     const { status } = await api.post('/users', data)
@@ -100,13 +101,28 @@ export function Auth() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password">Senha</Label>
-                <Input
-                  id="password"
-                  type="password"
-                  placeholder="Coloque sua senha"
-                  {...register('password')}
-                  required
-                />
+                <div className="flex items-center gap-2 border rounded-md pr-2">
+                  <Input
+                    id="password"
+                    type={showPassword ? 'text' : 'password'}
+                    placeholder="Coloque sua senha"
+                    className="flex-1 border-none"
+                    {...register('password')}
+                    required
+                  />
+                  {showPassword ? (
+                    <button
+                      onClick={() => setShowPassword(false)}
+                      type="button"
+                    >
+                      <Eye className="text-zinc-400 size-5" />
+                    </button>
+                  ) : (
+                    <button onClick={() => setShowPassword(true)} type="button">
+                      <EyeOff className="text-zinc-400 size-5" />
+                    </button>
+                  )}
+                </div>
               </div>
             </CardContent>
             <CardFooter className="flex justify-end">
