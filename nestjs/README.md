@@ -8,7 +8,7 @@ cria um arquivo .env e adiciona:
 - WEB_BASE_URL
 - PORT
 - JWT_SECRET
-- DATABASE_URL (SQLITE)
+- DATABASE_URL (SQLITE)\
 `npm install`\
 `npx prisma migrate dev`\
 `npm run start:dev`
