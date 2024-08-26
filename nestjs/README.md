@@ -7,7 +7,7 @@ Nesse desafio desenvolvi uma API para realizar o CRUD de *tasks* (tarefas).\
 - Marcar pelo `id` uma task como completa
 
 # Para rodar o projeto
-cria um arquivo .env e adiciona:
+cria um arquivo `.env` e adiciona:
 - API_BASE_URL
 - WEB_BASE_URL
 - PORT
